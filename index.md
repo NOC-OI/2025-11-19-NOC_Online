@@ -87,7 +87,7 @@ displayed if the 'eventbrite' field in the header is not set.
   <strong>About this workshop:</strong>
   This course is an introduction to containers and is intended as a beginner level course that is suitable for people who have no experience of containers. 
   It is aimed to help people who want to develop their knowledge of container tooling to help improve reproducibility and support their research work, or that of individuals or teams they are working with.
-  Basic familiarity with using the Unix shell/the command line is assumed. We'll be using Docker or Podman during this course, but may discuss Singularity at the end as well, if there is interest. Please note that ideally admin access to your laptop is required for this workshop, in order to install Docker/Podman. If you don't already have an EP account, this can be requested through the ServiceHub (Request a Service -> IT -> Access Requests -> Request and EP account); however, you will need a business case from your director before applying. If this isn't possible, please get in touch with us so that we can arrange a workaround. 
+  Basic familiarity with using the Unix shell/the command line is assumed. We'll be using Docker or Podman during this course, but may discuss Singularity at the end as well, if there is interest. Please note that ideally admin access to your laptop is required for this workshop, in order to install Docker/Podman. If you don't already have an EP account, this can be requested through the ServiceHub (Request a Service -> IT -> Access Requests -> Request an EP account); however, you will need a business case from your director before applying. If this isn't possible, please get in touch with us so that we can arrange a workaround. 
   Please see the course notes for further information or get in touch with us. 
 </p>
 
@@ -215,9 +215,6 @@ special instructions.
   We do not require participants to provide documentation of disabilities or disclose any unnecessary personal information. 
   However, we do want to help create an inclusive, accessible experience for all participants. 
   We encourage you to share any information that would be helpful to make your Carpentries experience accessible.
-  To request an accommodation for this workshop, please fill out the 
-  <a href="https://carpentries.typeform.com/to/B2OSYaD0">accommodation request form</a>.
-  If you have questions or need assistance with the accommodation form please <a href="mailto:team@carpentries.org">email us</a>.
 </p>
 
 <hr/>
@@ -265,6 +262,7 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 {% comment %}
 SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
+{% comment%}
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 {% if site.carpentry == "incubator" %}
@@ -285,7 +283,7 @@ change the value of `carpentry` to `incubator`.
 {% endif %}
 
 <hr/>
-
+{% endcomment%}
 
 {% comment %}
 SCHEDULE
@@ -347,6 +345,7 @@ please preview your site before committing, and make sure to run
 'tools/check' as well.
 {% endcomment %}
 
+{% comment%}
 <h2 id="setup">Setup</h2>
 
 <p>
@@ -367,6 +366,7 @@ please preview your site before committing, and make sure to run
   that may be useful on the
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
+{% endcomment%}
 
 {% comment %}
 For online workshops, the section below provides:
@@ -379,7 +379,9 @@ If you do not use Zoom for your online workshop, edit the file
 to include the relevant installation instructions.
 {% endcomment %}
 {% if online != "false" %}
+{% comment%}
 {% include install_instructions/videoconferencing.html %}
+{% endcomment%}
 {% endif %}
 
 {% comment %}
