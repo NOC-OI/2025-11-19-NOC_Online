@@ -194,11 +194,12 @@ Display the contact email address set in the configuration file.
 </p>
 
 <p>
-<strong><a href="https://carpentries.org">About The Carpentries</a></strong> project comprises the <a
+<strong><a href="https://carpentries.org">The Carpentries:</a></strong> The Carpentries project comprises the <a
 href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, and
 <a href="{{site.lc_site}}">Library Carpentry</a> communities of Instructors, Trainers, Maintainers,
 helpers, and supporters who share a mission to teach foundational computational and data science
-skills to researchers.</p>
+skills to researchers.
+</p>
 
 {% comment %}
 ACCESSIBILITY
