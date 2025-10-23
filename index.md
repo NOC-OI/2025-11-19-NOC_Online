@@ -402,4 +402,3 @@ to obtain the software and data you will need to follow the lesson.
 {% endif %}
 
 {% endcomment %}
-{% endif %}
